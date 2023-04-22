@@ -1,0 +1,33 @@
+.footer {
+    background-color: cornflowerblue;
+    height: 40vh;
+}
+
+.container {
+    height: 100%;
+    width: 80%;
+    border: 1px solid;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.title{
+    margin-bottom: 30px;
+}
+
+.iconBlock {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+    width: 270px;
+    margin-bottom: 30px;
+}
+
+.icon {
+    background-color: aqua;
+    width: 30px;
+    height: 30px;
+}
