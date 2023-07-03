@@ -20,6 +20,9 @@
   font-weight: 400;
   line-height: 1.6;
   margin-bottom: 20px;
+  @media screen and (max-width: 680px) {
+  width: 400px;
+  }
 
   .icon {
 

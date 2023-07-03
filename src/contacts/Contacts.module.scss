@@ -67,10 +67,12 @@
   font-weight: 400;
   line-height: 1.6;
   text-align: left;
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 992px) {
     max-width: 100%;
     flex: 100%;
+    flex-wrap: nowrap;
   }
+
 
 }
 
@@ -128,10 +130,9 @@
   flex: 0 0 50%;
   max-width: 50%;
   @media screen and (max-width: 1129px) {
-    flex:100%;
+    flex: 100%;
     max-width: 100%;
   }
-
 
 
 }
@@ -269,10 +270,12 @@ textarea.formControl {
   color: #555a64;
   font-weight: 400;
   line-height: 1.6;
-  @media screen and (max-width: 1000px) {
+  flex-wrap: nowrap;
+  @media screen and (max-width: 992px) {
     max-width: 100%;
     flex: 100%;
   }
+
 
 }
 
@@ -289,6 +292,12 @@ textarea.formControl {
   font-weight: 400;
   line-height: 1.6;
   text-align: left;
+  width: 300px;
+
+  @media screen and (max-width: 992px) {
+width: 100%;
+  }
+
 
 }
 

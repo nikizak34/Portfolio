@@ -20,9 +20,9 @@ export const Projects = () => {
             <div className={`${styleContainer.container} ${s.skillsContainer}`}>
            <Title title={'MY PROJECTS'}/>
                 <div className={s.projects}>
-                    <Project style={social} title={'Social Network'} description={'SPA created with React JS library,' +
-                        ' Redux for state management, TypeScript for scalability'} />
-                    <Project style={todolist} title={'TODO List'} description={'Application build with ReactJS/Redux/TypeScript and  Material UI.'} />
+                    <Project href={'https://github.com/nikizak34/samurai-way-main'} style={social} title={'Social Network'} description={'SPA created with React JS library,' +
+                        ' Redux for state management, TypeScript for scalability'}  />
+                    <Project  style={todolist} title={'TODO List'} description={'Application build with ReactJS/Redux/TypeScript and  Material UI.'} />
 
 
 
