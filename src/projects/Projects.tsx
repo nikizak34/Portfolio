@@ -1,18 +1,30 @@
 import React from 'react';
-import s from './Projects.module.css';
+import s from './Projects.module.scss';
 import styleContainer from '../common/styles/container.module.css'
 import {Project} from "./project/Project";
+import {Title} from "../common/components/Title";
+import soc from '../assets/image/projects/connection-networking-interconnection-link-bond.jpg'
+import todo from '../assets/image/projects/flat-lay-notebook-with-to-do-list-on-desk.jpg'
 
 
 export const Projects = () => {
+    const social={
+        backgroundImage:`url(${soc})`
+    }
+    const todolist={
+        backgroundImage:`url(${todo})`
+    }
+
     return (
         <div className={s.projectsBlock}>
             <div className={`${styleContainer.container} ${s.skillsContainer}`}>
-                <h2 className={s.title}>Projects</h2>
+           <Title title={'MY PROJECTS'}/>
                 <div className={s.projects}>
-                    <Project title={'social network'} description={'dsfffffffffffffff'} />
-                    <Project title={'todolist'} description={'dsggggggggggg'} />
-                    <Project title={'todolist'} description={'dsggggggggggg'} />
+                    <Project style={social} title={'Social Network'} description={'SPA created with React JS library,' +
+                        ' Redux for state management, TypeScript for scalability'} />
+                    <Project style={todolist} title={'TODO List'} description={'Application build with ReactJS/Redux/TypeScript and  Material UI.'} />
+
+
 
                 </div>
             </div>
