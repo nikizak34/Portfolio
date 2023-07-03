@@ -1,13 +1,25 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.16be9955.css",
-    "main.js": "/Portfolio/static/js/main.5be0c1b8.js",
+    "main.css": "/Portfolio/static/css/main.433113ab.css",
+    "main.js": "/Portfolio/static/js/main.7bf407e3.js",
+    "static/media/connection-networking-interconnection-link-bond.jpg": "/Portfolio/static/media/connection-networking-interconnection-link-bond.07785cdecae49f0d1543.jpg",
+    "static/media/flat-lay-notebook-with-to-do-list-on-desk.jpg": "/Portfolio/static/media/flat-lay-notebook-with-to-do-list-on-desk.5ba69b6ccda04972f6ee.jpg",
+    "static/media/photo_2023-04-01_15-39-39.jpg": "/Portfolio/static/media/photo_2023-04-01_15-39-39.f18fb94e126a94e3941f.jpg",
+    "static/media/brand-codewars-svgrepo-com.svg": "/Portfolio/static/media/brand-codewars-svgrepo-com.6a363c7ce13dcdf99b4d53c5b81018f4.svg",
+    "static/media/sass-svgrepo-com.svg": "/Portfolio/static/media/sass-svgrepo-com.f258d3a44e6b2afd0bec4d84f179a524.svg",
+    "static/media/react-svgrepo-com.svg": "/Portfolio/static/media/react-svgrepo-com.fcca8017310f0cf8ffba4dbf899f2779.svg",
+    "static/media/redux-svgrepo-com.svg": "/Portfolio/static/media/redux-svgrepo-com.0212214c83d38d0d90d277560ec30ad4.svg",
+    "static/media/github-142-svgrepo-com.svg": "/Portfolio/static/media/github-142-svgrepo-com.5531be85d7a8d6f333e5c7136944a022.svg",
+    "static/media/javascript-155-svgrepo-com.svg": "/Portfolio/static/media/javascript-155-svgrepo-com.37270e3adc5620c25b5e9b9b6cc900d6.svg",
+    "static/media/html5-01-svgrepo-com.svg": "/Portfolio/static/media/html5-01-svgrepo-com.971e51be42aafa7db8fbf4510b204db8.svg",
     "index.html": "/Portfolio/index.html",
-    "main.16be9955.css.map": "/Portfolio/static/css/main.16be9955.css.map",
-    "main.5be0c1b8.js.map": "/Portfolio/static/js/main.5be0c1b8.js.map"
+    "static/media/typescript-svgrepo-com.svg": "/Portfolio/static/media/typescript-svgrepo-com.7b32abcf8ba5527249e836d7e84ce49a.svg",
+    "static/media/material-ui-svgrepo-com.svg": "/Portfolio/static/media/material-ui-svgrepo-com.9a7fa21fef461d272ba8151574584e84.svg",
+    "main.433113ab.css.map": "/Portfolio/static/css/main.433113ab.css.map",
+    "main.7bf407e3.js.map": "/Portfolio/static/js/main.7bf407e3.js.map"
   },
   "entrypoints": [
-    "static/css/main.16be9955.css",
-    "static/js/main.5be0c1b8.js"
+    "static/css/main.433113ab.css",
+    "static/js/main.7bf407e3.js"
   ]
 }
