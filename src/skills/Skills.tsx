@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Skills.module.scss';
-import styleContainer from '../common/styles/container.module.css'
+import styleContainer from '../common/styles/container.module.scss'
 import {Skill} from "./skill/Skill";
 import {Title} from "../common/components/Title";
 import react from '../assets/image/technology/react-svgrepo-com.svg'

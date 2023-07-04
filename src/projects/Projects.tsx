@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Projects.module.scss';
-import styleContainer from '../common/styles/container.module.css'
+import styleContainer from '../common/styles/container.module.scss'
 import {Project} from "./project/Project";
 import {Title} from "../common/components/Title";
 import soc from '../assets/image/projects/connection-networking-interconnection-link-bond.jpg'

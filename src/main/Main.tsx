@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Main.module.scss';
-import styleContainer from '../common/styles/container.module.css'
+import styleContainer from '../common/styles/container.module.scss'
 import image from "../../src/assets/image/ava/photo_2023-04-01_15-39-39.jpg";
 
 

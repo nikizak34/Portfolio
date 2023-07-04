@@ -8,6 +8,7 @@
     justify-content: flex-start;
     padding-bottom: 90px;
 
+
     .skills {
       display: flex;
       justify-content: space-between;
@@ -38,10 +39,11 @@
   display: inline-block;
   vertical-align: top;
   z-index: 1;
-  padding: 100px 0 10px 0;
+  padding: 90px 0 10px 0;
   color: #090a0c;
   text-transform: uppercase !important;
   font-family: "Poppins", sans-serif;
+
 
   &::before {
     position: absolute;
