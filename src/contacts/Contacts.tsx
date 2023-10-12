@@ -5,48 +5,52 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faPhone} from '@fortawesome/free-solid-svg-icons'
 import {faLocationDot} from '@fortawesome/free-solid-svg-icons'
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
+import {Fade} from "react-awesome-reveal";
+
 export const Contacts = () => {
     return (
-        <div className={s.contacts}>
+        <div id={'contacts'} className={s.contacts}>
             <div className={s.container}>
                 <Title title={'GET IN TOUCH'}/>
                 <div className={s.row}>
                     <div className={s.column}>
                         <div className={s.contactForm}>
                             <h4 className={s.title}>SAY SOMETHING</h4>
-                            <form className={s.rowForm}>
-                                <div className={s.formGroup}>
-                                    <div className={s.colMd}>
-                                        <input className={s.formControl} type="text" name='name'
-                                               placeholder={'Name *'}/>
-                                        <span className={s.line}></span>
+                            <Fade cascade direction={"left"}>
+                                <form className={s.rowForm}>
+                                    <div className={s.formGroup}>
+                                        <div className={s.colMd}>
+                                            <input className={s.formControl} type="text" name='name'
+                                                   placeholder={'Name *'}/>
+                                            <span className={s.line}></span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className={s.formGroup}>
-                                    <div className={s.colMd}>
-                                        <input className={s.formControl} type="text" name='name'
-                                               placeholder={'Email *'}/>
-                                        <span className={s.line}></span>
+                                    <div className={s.formGroup}>
+                                        <div className={s.colMd}>
+                                            <input className={s.formControl} type="text" name='name'
+                                                   placeholder={'Email *'}/>
+                                            <span className={s.line}></span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className={s.formGroup2}>
-                                    <div className={s.colMd}>
-                                        <input className={s.formControl} type="text" name='name'
-                                               placeholder={'Subject *'}/>
-                                        <span className={s.line}></span>
+                                    <div className={s.formGroup2}>
+                                        <div className={s.colMd}>
+                                            <input className={s.formControl} type="text" name='name'
+                                                   placeholder={'Subject *'}/>
+                                            <span className={s.line}></span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className={s.formGroup3}>
-                                    <div className={s.colMd}>
+                                    <div className={s.formGroup3}>
+                                        <div className={s.colMd}>
                                         <textarea className={s.formControl} name='name'
                                                   placeholder={'Your message *'}/>
-                                        <span className={s.line}></span>
+                                            <span className={s.line}></span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className={s.formGroup3}>
-                                    <button className={s.mBtn}>SEND MESSAGE</button>
-                                </div>
-                            </form>
+                                    <div className={s.formGroup3}>
+                                        <button type={'submit'} className={s.mBtn}>SEND MESSAGE</button>
+                                    </div>
+                                </form>
+                            </Fade>
                         </div>
                     </div>
                     <div className={s.column2}>
@@ -82,12 +86,6 @@ export const Contacts = () => {
 
                     </div>
                 </div>
-                {/*<form className={s.form}>*/}
-                {/*    <input type="text"/>*/}
-                {/*    <input type="text"/>*/}
-                {/*    <textarea className={s.afa} ></textarea>*/}
-                {/*</form>*/}
-                {/*<button type={'submit'} className={s.button}>Send</button>*/}
             </div>
         </div>
     );

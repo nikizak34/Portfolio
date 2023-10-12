@@ -2,10 +2,11 @@
     background-color: #ffffff;
     height: 70px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: flex-end;
     position: fixed;
-    top: 0;
+    flex-wrap: nowrap;
     left: 0;
     right: 0;
     z-index: 1000;

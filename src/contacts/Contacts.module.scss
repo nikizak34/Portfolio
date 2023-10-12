@@ -12,13 +12,6 @@
 }
 
 .container {
-  /*height: 100%;*/
-  /*width: 80%;*/
-  /*border: 1px solid;*/
-  /*margin: 0 auto;*/
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  /*align-items: center;*/
   padding-right: 15px;
   padding-left: 15px;
   font-family: "Poppins", sans-serif;
@@ -80,7 +73,7 @@
   border-radius: 5px;
   background: #ffffff;
   padding: 1% 5% 5% 5%;
-  box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.1);
+  box-shadow: 0 3px 10px 0 rgba(38, 59, 94, 0.1);
   display: block;
   font-family: "Poppins", sans-serif;
   font-size: 15px;
@@ -105,7 +98,7 @@
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-  margin-top: 0em;
+  margin-top: 0;
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   color: #555a64;
@@ -195,7 +188,7 @@ textarea.formControl {
   bottom: -1px;
   left: auto;
   right: 0;
-  width: 0px;
+  width: 0;
   height: 2px;
   transition: ease all 0.35s;
   background-color: #d9832e;
@@ -224,9 +217,9 @@ textarea.formControl {
 
 
 .formGroup3 {
-  flex: 0 0 100%;
   max-width: 100%;
   position: relative;
+  flex: 0 0 100%;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -236,23 +229,28 @@ textarea.formControl {
   font-weight: 400;
   line-height: 1.6;
 
-}
+  .mBtn {
+    background: #d9832e;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    border: 2px solid transparent;
+    line-height: inherit;
+    border-radius: 0;
+    width: auto;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: ease-in-out all 0.55s;
+    text-align: center;
 
-.mBtn {
-  background: #d9832e;
-  color: #ffffff;
-  cursor: pointer;
-  display: inline-block;
-  border: 2px solid transparent;
-  line-height: inherit;
-  border-radius: 0;
-  width: auto;
-  padding: 10px 20px;
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
-  transition: ease-in-out all 0.55s;
-  text-align: center;
+    &:hover {
+      background-color: #090a0c;
+    }
+
+  }
+
 }
 
 
@@ -283,7 +281,7 @@ textarea.formControl {
 .info {
   background: #ffffff;
   padding: 21px;
-  box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.1);
+  box-shadow: 0 3px 10px 0 rgba(38, 59, 94, 0.1);
   display: flex;
   align-items: flex-start;
   font-family: "Poppins", sans-serif;
@@ -295,7 +293,7 @@ textarea.formControl {
   width: 300px;
 
   @media screen and (max-width: 992px) {
-width: 100%;
+    width: 100%;
   }
 
 
@@ -358,38 +356,5 @@ width: 100%;
 }
 
 
-/*.form {*/
-/*    width: 270px;*/
-/*    height: 170px;*/
-/*    border: 1px solid;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    justify-content: space-between;*/
-/*    flex-wrap: wrap;*/
-/*}*/
 
-/*@media screen and (max-width:  534px) {*/
-
-/*    .form{*/
-/*        width: 100%;*/
-/*    }*/
-
-/*}*/
-
-/*.afa {*/
-/*    height: 110px;*/
-/*    resize: vertical*/
-
-/*}*/
-
-/*.button {*/
-/*    margin-top: 30px;*/
-/*    background-color: white;*/
-/*    width: 70px;*/
-/*}*/
-
-/*.title{*/
-/*    background-color: aqua;*/
-/*    font-size: 23px;*/
-/*}*/
 

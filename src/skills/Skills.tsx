@@ -16,7 +16,7 @@ import material from '../assets/image/technology/material-ui-svgrepo-com.svg'
 export const Skills = () => {
 
     return (
-        <div className={s.skillsBlock}>
+        <div id={'skills'} className={s.skillsBlock}>
             <div className={`${styleContainer.container} ${s.skillsContainer}`}>
                 <Title title={'MY SKILLS'}/>
                 <div className={s.skills}>
