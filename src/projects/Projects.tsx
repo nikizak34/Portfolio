@@ -8,22 +8,24 @@ import todo from '../assets/image/projects/flat-lay-notebook-with-to-do-list-on-
 
 
 export const Projects = () => {
-    const social={
-        backgroundImage:`url(${soc})`
+    const social = {
+        backgroundImage: `url(${soc})`
     }
-    const todolist={
-        backgroundImage:`url(${todo})`
+    const todolist = {
+        backgroundImage: `url(${todo})`
     }
 
     return (
         <div id={'projects'} className={s.projectsBlock}>
             <div className={`${styleContainer.container} ${s.skillsContainer}`}>
-           <Title title={'MY PROJECTS'}/>
+                <Title title={'MY PROJECTS'}/>
                 <div className={s.projects}>
-                    <Project href={'https://github.com/nikizak34/samurai-way-main'} style={social} title={'Social Network'} description={'SPA created with React JS library,' +
-                        ' Redux for state management, TypeScript for scalability'}  />
-                    <Project  style={todolist} title={'TODO List'} description={'Application build with ReactJS/Redux/TypeScript and  Material UI.'} />
-
+                    <Project href={'https://nikizak34.github.io/social-network'} style={social}
+                             title={'Social Network'} description={'SPA created with React JS library,' +
+                        ' Redux for state management, TypeScript for scalability'}/>
+                    <Project  href={'https://nikizak34.github.io/task-manager'}
+                              style={todolist} title={'TODO List'}
+                             description={'Application build with ReactJS/Redux/TypeScript and  Material UI.'}/>
 
 
                 </div>

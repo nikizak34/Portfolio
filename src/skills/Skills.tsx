@@ -28,7 +28,7 @@ export const Skills = () => {
                         ' with React.memo.'} title={'React'} tech={react}/>
                     <Skill description={'Implemented Redux for state management of app as BLL. Created reducers for ' +
                         'immutable state modification, and used Thunk middleware for asynchronous' +
-                        ' network requests.'} title={'Redux'} tech={redux}/>
+                        ' network requests.'} title={'Redux/Redux Toolkit/RTK query'} tech={redux}/>
                     <Skill description={'Experienced in using ES6 features, such as Promises, Classes, Destructuring' +
                         ' assignment, Arrow functions etc.'} tech={javascript} title={'JavaScript'}/>
                     <Skill description={'Used TypeScript for developing easily scalable and' +
@@ -41,8 +41,8 @@ export const Skills = () => {
                     <Skill description={'Sass is the most mature, stable, and powerful professional' +
                         ' grade CSS extension' +
                         ' language in the world.'} tech={sass} title={'SaSS/SCSS'}/>
-                    <Skill description={'Used Material UI for app development with styles ' +
-                        'and design out of a box.'} tech={material} title={'Material UI'}/>
+                    <Skill description={'Used Material UI/Radix UI for app development with styles ' +
+                        'and design out of a box.'} tech={material} title={'Material UI/Radix UI'}/>
                 </div>
             </div>
         </div>

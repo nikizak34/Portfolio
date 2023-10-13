@@ -7,10 +7,10 @@ export const BurgerNav = () => {
     const onBurgerBtnClick=()=>{
        setMenuIsOpen(!menuIsOpen)
     }
-    console.log(menuIsOpen)
+
     return (
         <div className={s.burgerNav}>
-            <div className={menuIsOpen?`${s.show}`:s.burgerNavItems}>
+            <div className={menuIsOpen?`${s.show} ${s.burgerNavItems}`:s.burgerNavItems}>
                 <Link to={'main'}
                       activeClass={s.active}
                       spy={true}
@@ -40,7 +40,11 @@ export const BurgerNav = () => {
                       duration={500}
                 >Contacts</Link>
             </div>
-            <div onClick={onBurgerBtnClick} className={s.burgerBtn}></div>
+            <div onClick={onBurgerBtnClick} className={s.burgerBtn}>
+                    <span className={s.line}></span>
+                    <span className={s.line}></span>
+                    <span className={s.line}></span>
+            </div>
 
         </div>
 

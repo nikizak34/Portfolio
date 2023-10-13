@@ -3,12 +3,13 @@
   width: 100%;
   height: 100%;
 
+
   .burgerNavItems {
     position: absolute;
     right: 19px;
     left: 19px;
-    top: 74px;
-    height: 150px;
+    top: 71px;
+    height: 0;
     padding: 20px;
     border: 1px solid #cccccc;
     background-color: #ffffff;
@@ -17,6 +18,8 @@
     align-items: center;
     flex-wrap: nowrap;
     justify-content: space-between;
+    transform: translate(0,-250px);
+    transition: 0.6s;
 
     a {
       text-decoration: none;
@@ -44,15 +47,30 @@
     height: 40px;
     background-color: #d9832e;
     position: absolute;
-    top: 24px;
+    top: 15px;
     right: 20px;
+    .line{
+      width: 25px;
+      height: 3px;
+      background: #ffffff;
+      color: #ffffff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      box-shadow: 0px -8px 0 0px currentColor, 0px 8px 0 0px currentColor;
+    }
   }
 
   .show {
-    display: none;
+    transform: translate(0,0);
+    height: 150px;
+
   }
 
-  @media screen and (min-width: 400px) {
+  @media screen and (min-width: 500px) {
     display: none;
   }
 }

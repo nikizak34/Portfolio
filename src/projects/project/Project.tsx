@@ -12,7 +12,7 @@ export const Project: React.FC<ProjectType> = ({title, description, style,href})
     return (
         <div className={s.project} >
             <div  className={s.imageContainer} style={style}>
-                <a href={href}>Смотреть</a>
+                <a href={href}>View</a>
             </div>
             <div className={s.des}>
                 <h4 className={s.designation} >{title}</h4>
