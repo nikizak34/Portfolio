@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Footer.module.css';
+import s from './Footer.module.scss';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub} from '@fortawesome/free-brands-svg-icons'
 import {faTelegram} from "@fortawesome/free-brands-svg-icons/faTelegram";

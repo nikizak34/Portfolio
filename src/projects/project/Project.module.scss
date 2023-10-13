@@ -1,11 +1,11 @@
+@import "../../common/styles/sass/mixins";
+
 .project {
   width: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
   padding-bottom: 90px;
   padding-right: 30px;
+  @include flex(center, column, flex-start, nowrap);
 
   @media screen and (max-width: 1017px) {
     width: 700px;
@@ -15,15 +15,24 @@
   .imageContainer {
     width: 100%;
     height: 300px;
-    display: flex;
     background-repeat: no-repeat;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-size: cover;
     background-position: left;
+    @include flex(center, column, center, nowrap);
 
+    a {
+      padding: 12px 35px;
+      background-color: #eaedf2;
+      text-decoration: none;
+      color: #090a0c;
+      border-radius: 10px;
+      font-family: "Poppins", sans-serif;
 
+      &:hover {
+        background-color: #d9832e;
+        opacity: 95%;
+      }
+    }
   }
 
   .des {
@@ -33,11 +42,7 @@
     padding: 8px 18px 18px 18px;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.19);
     display: block;
-    font-family: "Poppins", sans-serif;
-    font-size: 15px;
-    color: #555a64;
-    font-weight: 400;
-    line-height: 1.6;
+    @include text();
 
     .designation {
       color: #d9832e;
@@ -50,19 +55,7 @@
   }
 }
 
-.imageContainer a {
-  padding: 12px 35px;
-  background-color: #eaedf2;
-  text-decoration: none;
-  color: #090a0c;
-  border-radius: 10px;
-  font-family: "Poppins", sans-serif;
 
-  &:hover {
-    background-color: #d9832e;
-    opacity: 95%;
-  }
-}
 
 
 

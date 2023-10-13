@@ -5,7 +5,6 @@ import {Project} from "./project/Project";
 import {Title} from "../common/components/Title";
 import soc from '../assets/image/projects/connection-networking-interconnection-link-bond.jpg'
 import todo from '../assets/image/projects/flat-lay-notebook-with-to-do-list-on-desk.jpg'
-import {Fade} from "react-awesome-reveal";
 
 
 export const Projects = () => {
@@ -18,7 +17,7 @@ export const Projects = () => {
 
     return (
         <div id={'projects'} className={s.projectsBlock}>
-            <Fade cascade direction={'left'}>
+
                 <div className={`${styleContainer.container} ${s.skillsContainer}`}>
                     <Title title={'MY PROJECTS'}/>
                     <div className={s.projects}>
@@ -31,7 +30,7 @@ export const Projects = () => {
                                  description={'Application build with ReactJS/Redux/TypeScript and  Material UI.'}/>
                     </div>
                 </div>
-            </Fade>
+
         </div>
     );
 };

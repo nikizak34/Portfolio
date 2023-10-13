@@ -1,0 +1,53 @@
+@import "../../../common/styles/sass/mixins";
+
+.colMd {
+  position: relative;
+  margin-bottom: 20px;
+  display: block;
+  @include text();
+
+  .formControl {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+
+  }
+
+  textarea.formControl {
+    overflow: auto;
+    resize: vertical;
+    height: 80px;
+    margin: 0;
+  }
+
+  .formControl:focus {
+    outline: none;
+    border-bottom: 1px solid #d9832e;
+
+  }
+
+  .line {
+    position: absolute;
+    bottom: -1px;
+    left: auto;
+    right: 0;
+    width: 0;
+    height: 2px;
+    transition: ease all 0.35s;
+    background-color: #d9832e;
+  }
+}
+

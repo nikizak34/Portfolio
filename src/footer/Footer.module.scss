@@ -1,0 +1,43 @@
+@import "../common/styles/sass/mixins";
+
+.footer {
+  background: #111;
+  padding: 12px 0;
+  @include text();
+
+  .container {
+    padding: 15px 15px 15px 15px;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    @include flex(center, column, center, wrap);
+
+    .title {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    .iconBlock {
+      width: 220px;
+      padding-bottom: 15px;
+      @include flex(center, row, space-around, nowrap);
+
+
+      .icon {
+        font-size: 32px;
+      }
+
+      .fotImage {
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 29px;
+        height: 29px;
+        margin-top: 5px;
+
+      }
+
+    }
+
+  }
+
+}
+

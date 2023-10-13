@@ -1,0 +1,59 @@
+@import "../../../common/styles/sass/mixins";
+
+.info {
+  background: #ffffff;
+  padding: 21px;
+  box-shadow: 0 3px 10px 0 rgba(38, 59, 94, 0.1);
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  width: 300px;
+  @include text();
+
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
+
+  @media screen and (max-width: 992px) {
+    width: 100%;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color: #ffffff;
+    background: #d9832e;
+    font-size: 19px;
+    line-height: 40px;
+    margin-right: 20px;
+    display: block;
+  }
+
+  .mediaBody {
+    flex: 1;
+    text-align: left;
+
+    .topic {
+      font-size: 15px;
+      font-weight: 500;
+      color: #090a0c;
+      margin-bottom: 8px;
+      margin-top: 0;
+      display: block;
+      line-height: 1.2;
+
+    }
+
+    .text {
+      font-size: 14px;
+    }
+  }
+
+}
+
+
+
+
+

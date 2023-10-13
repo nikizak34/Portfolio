@@ -1,3 +1,15 @@
-@mixin text(){
+@mixin flex($align-items,$flex-direction,$justify-content,$wrap) {
+  display: flex;
+  align-items: $align-items;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  flex-wrap:$wrap ;
+}
 
+@mixin text () {
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color:#555a64
 }

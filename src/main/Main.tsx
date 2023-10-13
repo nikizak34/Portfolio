@@ -9,47 +9,47 @@ import {TypeAnimation} from "react-type-animation";
 export const Main = () => {
     return (
         <div id={'main'} className={s.mainBlock}>
-                <div className={styleContainer.container}>
-                    <div className={s.mainText}>
-                        <span className={s.title}>Hello there...</span>
-                        <h1 className={s.name}>I'm Nikita Zakutaev </h1>
-                        <h2 className={s.profession}>
-                            <TypeAnimation
-                                sequence={[
-                                    'Front - End Developer', 4000,
-                                    'Front - End ', 300,
-                                    'Front -', 300,
-                                    '', 3000,
-                                ]}
-                                repeat={Infinity}
-                                speed={1}
-                            />
-                        </h2>
+            <div className={styleContainer.container}>
+                <div className={s.mainText}>
+                    <span className={s.title}>Hello there...</span>
+                    <h1 className={s.name}>I'm Nikita Zakutaev </h1>
+                    <h2 className={s.profession}>
+                        <TypeAnimation
+                            sequence={[
+                                'Front - End Developer', 4000,
+                                'Front - End ', 300,
+                                'Front -', 300,
+                                '', 3000,
+                            ]}
+                            repeat={Infinity}
+                            speed={1}
+                        />
+                    </h2>
 
-                        <p className={s.text}>I'm frontend developer with experience in creating SPA using React,
-                            Redux,redux-Toolkit,Axios,
-                            React-Router-Dom, TypeScript, JavaScript, SCSS, HTML. Usualy i prefer to spend my leisure
-                            time
-                            on improving my English, studying new technologies and solve tasks on Codewars. Ready to
-                            consider
-                            project work and full-time employment.
-                        </p>
-                        <div className={s.btnBar}>
-                            <Link to={'projects'}
-                                  className={s.work}
-                                  activeClass={s.active}
-                                  spy={true}
-                                  smooth={true}
-                                  offset={-40}
-                                  duration={500}
-                            >MY WORK</Link>
-                            <div className={s.here}>CV</div>
-                        </div>
-                    </div>
-                    <div className={s.image}>
-                        <div style={{backgroundImage: `url(${image})`}} className={s.photo}></div>
+                    <p className={s.text}>I'm frontend developer with experience in creating SPA using React,
+                        Redux,redux-Toolkit,Axios,
+                        React-Router-Dom, TypeScript, JavaScript, SCSS, HTML. Usualy i prefer to spend my leisure
+                        time
+                        on improving my English, studying new technologies and solve tasks on Codewars. Ready to
+                        consider
+                        project work and full-time employment.
+                    </p>
+                    <div className={s.btnBar}>
+                        <Link to={'projects'}
+                              className={s.work}
+                              activeClass={s.active}
+                              spy={true}
+                              smooth={true}
+                              offset={-40}
+                              duration={500}
+                        >MY WORK</Link>
+                        <div className={s.here}>CV</div>
                     </div>
                 </div>
+                <div className={s.image}>
+                    <div style={{backgroundImage: `url(${image})`}} className={s.photo}></div>
+                </div>
+            </div>
         </div>
     );
 };

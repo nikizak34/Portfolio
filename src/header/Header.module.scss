@@ -1,12 +1,9 @@
+@import "../common/styles/sass/mixins";
 .header{
+    @include flex(center, row, flex-end, nowrap);
     background-color: #ffffff;
     height: 70px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
     position: fixed;
-    flex-wrap: nowrap;
     left: 0;
     right: 0;
     z-index: 1000;
@@ -15,5 +12,4 @@
         justify-content: center;
         padding-left: 180px;
     }
-
 }
