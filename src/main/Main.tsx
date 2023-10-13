@@ -2,7 +2,6 @@ import React from 'react';
 import s from './Main.module.scss';
 import styleContainer from '../common/styles/container.module.scss'
 import image from "../../src/assets/image/ava/photo_2023-04-01_15-39-39.jpg";
-import {Fade} from "react-awesome-reveal";
 import {Link} from "react-scroll";
 import {TypeAnimation} from "react-type-animation";
 
@@ -10,7 +9,6 @@ import {TypeAnimation} from "react-type-animation";
 export const Main = () => {
     return (
         <div id={'main'} className={s.mainBlock}>
-            <Fade cascade direction={"down"}>
                 <div className={styleContainer.container}>
                     <div className={s.mainText}>
                         <span className={s.title}>Hello there...</span>
@@ -52,7 +50,6 @@ export const Main = () => {
                         <div style={{backgroundImage: `url(${image})`}} className={s.photo}></div>
                     </div>
                 </div>
-            </Fade>
         </div>
     );
 };

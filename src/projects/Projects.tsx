@@ -5,6 +5,7 @@ import {Project} from "./project/Project";
 import {Title} from "../common/components/Title";
 import soc from '../assets/image/projects/connection-networking-interconnection-link-bond.jpg'
 import todo from '../assets/image/projects/flat-lay-notebook-with-to-do-list-on-desk.jpg'
+import {Fade} from "react-awesome-reveal";
 
 
 export const Projects = () => {
@@ -17,19 +18,20 @@ export const Projects = () => {
 
     return (
         <div id={'projects'} className={s.projectsBlock}>
-            <div className={`${styleContainer.container} ${s.skillsContainer}`}>
-                <Title title={'MY PROJECTS'}/>
-                <div className={s.projects}>
-                    <Project href={'https://nikizak34.github.io/social-network'} style={social}
-                             title={'Social Network'} description={'SPA created with React JS library,' +
-                        ' Redux for state management, TypeScript for scalability'}/>
-                    <Project  href={'https://nikizak34.github.io/task-manager'}
-                              style={todolist} title={'TODO List'}
-                             description={'Application build with ReactJS/Redux/TypeScript and  Material UI.'}/>
+            <Fade cascade direction={'left'}>
+                <div className={`${styleContainer.container} ${s.skillsContainer}`}>
+                    <Title title={'MY PROJECTS'}/>
+                    <div className={s.projects}>
+                        <Project href={'https://nikizak34.github.io/social-network'} style={social}
+                                 title={'Social Network'} description={'SPA created with React JS library,' +
+                            ' Redux for state management, TypeScript for scalability'}/>
 
-
+                        <Project href={'https://nikizak34.github.io/task-manager'}
+                                 style={todolist} title={'TODO List'}
+                                 description={'Application build with ReactJS/Redux/TypeScript and  Material UI.'}/>
+                    </div>
                 </div>
-            </div>
+            </Fade>
         </div>
     );
 };

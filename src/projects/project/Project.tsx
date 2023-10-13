@@ -11,6 +11,7 @@ type ProjectType = {
 export const Project: React.FC<ProjectType> = ({title, description, style,href}) => {
     return (
         <div className={s.project} >
+
             <div  className={s.imageContainer} style={style}>
                 <a href={href}>View</a>
             </div>
@@ -20,6 +21,7 @@ export const Project: React.FC<ProjectType> = ({title, description, style,href})
             </div>
 
         </div>
+
     );
 };
 

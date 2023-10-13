@@ -20,6 +20,15 @@
   font-weight: 400;
   line-height: 1.6;
   margin-bottom: 20px;
+  &:hover {
+    transform: translate(0,-15px);
+    transition: 0.3s;
+    @media screen and (max-width: 1024px) {
+     transition: none;
+      transform: none;
+    }
+  }
+
   @media screen and (max-width: 680px) {
   width: 400px;
   }
@@ -36,10 +45,10 @@
     font-size: 16px;
     margin: 15px 0 12px;
     font-family: "Poppins", sans-serif;
-
     &::first-letter{
       color: #d9832e;
     }
+
   }
 
   .description {

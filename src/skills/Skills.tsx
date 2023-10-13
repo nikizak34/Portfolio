@@ -33,9 +33,10 @@ export const Skills = () => {
                         ' assignment, Arrow functions etc.'} tech={javascript} title={'JavaScript'}/>
                     <Skill description={'Used TypeScript for developing easily scalable and' +
                         ' sustainable application.'} tech={typescript} title={'TypeScript'}/>
-                    <Skill description={'GitHub is an international web service for hosting IT projects and their joint' +
-                        ' development. The web service is based on the Git version control' +
-                        ' system'} tech={github} title={'GitHub'}/>
+                    <Skill
+                        description={'GitHub is an international web service for hosting IT projects and their joint' +
+                            ' development. The web service is based on the Git version control' +
+                            ' system'} tech={github} title={'GitHub'}/>
                     <Skill description={'Created styles for UI components by using Styled Components and Sass' +
                         ' preprocessor.'} tech={html} title={'HTML/CSS'}/>
                     <Skill description={'Sass is the most mature, stable, and powerful professional' +
