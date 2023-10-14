@@ -19,10 +19,12 @@ export const FormGroup = () => {
         formState: {errors}
     } = useForm<FormValues>({mode: "onChange"})
 
-    const sendEmail = async (data: FormValues, event: any) => {
-        await emailjs.sendForm('service_dqrksm5', 'template_d3nkh1o', event.target, 'a8STGMiw0zIFCAuYa')
+    const sendEmail = (data: FormValues, event: any) => {
+        event.preventDefault()
+        emailjs.sendForm('service_dqrksm5', 'template_d3nkh1o', event.target, 'W6duJf4emA0AGH6j0')
         event.target.reset()
     }
+
     return (
         <div className={s.column}>
             <div className={s.contactForm}>
@@ -34,7 +36,7 @@ export const FormGroup = () => {
                                 ...register('name', {
                                     required: 'Name is required',
                                     maxLength: {
-                                        value: 100, message: 'The field Message must be a' +
+                                        value: 100, message: 'The field Name must be a' +
                                             ' string or array type with a maximum length of \'100\''
                                     },
                                 })
@@ -60,7 +62,6 @@ export const FormGroup = () => {
                                                         ' string or array type with a maximum length of \'100\''
                                                 },
                                             })}
-                                            name={'message'}
                                             className={errors.message ? style.lineError : style.formControl}
                                             placeholder={'Your message *'}/>
                                 {errors.message && <div style={{color: 'red'}}>{errors.message?.message}</div>}
