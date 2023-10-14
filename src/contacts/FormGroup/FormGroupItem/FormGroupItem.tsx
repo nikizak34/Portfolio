@@ -14,7 +14,6 @@ export const FormGroupItem = ({placeholder,register,errors}: Props) => {
         <div className={style.colMd}>
             <input {...register} className={errors?style.lineError:style.formControl} type="text"
                    placeholder={placeholder}/>
-            {/*<span className={errors?style.lineError:style.line}></span>*/}
         </div>
     );
 };

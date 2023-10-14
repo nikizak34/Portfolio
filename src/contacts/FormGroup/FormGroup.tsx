@@ -7,8 +7,6 @@ import {useForm} from "react-hook-form";
 import emailjs from '@emailjs/browser';
 
 
-
-
 type FormValues = {
     name: string
     email: string
@@ -21,13 +19,10 @@ export const FormGroup = () => {
         formState: {errors}
     } = useForm<FormValues>({mode: "onChange"})
 
-    const sendEmail = (data: FormValues) => {
-        debugger
-        // @ts-ignore
-        emailjs.sendForm('gmail', 'template_d3nkh1o',data, 'a8STGMiw0zIFCAuYa').then(()=>{})
-        debugger
+    const sendEmail = async (data: FormValues, event: any) => {
+        await emailjs.sendForm('service_dqrksm5', 'template_d3nkh1o', event.target, 'a8STGMiw0zIFCAuYa')
+        event.target.reset()
     }
-
     return (
         <div className={s.column}>
             <div className={s.contactForm}>
