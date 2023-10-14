@@ -38,6 +38,13 @@
       margin-top: 0;
       -webkit-text-size-adjust: 100%;
       -webkit-tap-highlight-color: transparent;
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover,
+      input:-webkit-autofill:focus,
+      input:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 10em white inset;
+        -webkit-text-fill-color: #555a64;
+      }
 
       .formGroup {
         margin-bottom: 20px;
