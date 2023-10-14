@@ -5,7 +5,6 @@ import {FormGroup} from "./FormGroup/FormGroup";
 import {Info} from "./Info/Info";
 
 export const Contacts = () => {
-
     return (
         <div id={'contacts'} className={s.contacts}>
             <div className={s.container}>

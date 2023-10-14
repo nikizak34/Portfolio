@@ -20,11 +20,15 @@
     color: #495057;
     background-color: #fff;
     background-clip: padding-box;
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     margin: 0;
     font-family: "Poppins", sans-serif;
 
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid #d9832e;
+    }
   }
+
 
   textarea.formControl {
     overflow: auto;
@@ -33,21 +37,22 @@
     margin: 0;
   }
 
-  .formControl:focus {
-    outline: none;
-    border-bottom: 1px solid #d9832e;
-
-  }
-
-  .line {
-    position: absolute;
-    bottom: -1px;
-    left: auto;
-    right: 0;
-    width: 0;
-    height: 2px;
-    transition: ease all 0.35s;
-    background-color: #d9832e;
+  /*  .line {
+      position: absolute;
+      bottom: -1px;
+      left: auto;
+      right: 0;
+      width: 0;
+      height: 2px;
+      transition: ease all 0.35s;
+      background-color: #d9832e;
+    }*/
+  .lineError {
+    @extend .formControl;
+    border-bottom: 1px solid red;
+    &:focus {
+      border-bottom: 1px solid red;
+    }
   }
 }
 
