@@ -3,7 +3,7 @@ import s from "../FormGroup/FormGroup.module.scss";
 import style from "../FormGroup/FormGroupItem/FormGroupItem.module.scss";
 import {Fade} from "react-awesome-reveal";
 import {FormGroupItem} from "./FormGroupItem/FormGroupItem";
-import {useForm} from "react-hook-form";
+import {SubmitHandler, useForm} from "react-hook-form";
 import emailjs from '@emailjs/browser';
 
 
@@ -19,10 +19,10 @@ export const FormGroup = () => {
         formState: {errors}
     } = useForm<FormValues>({mode: "onChange"})
 
-    const sendEmail = (data: FormValues, event: any) => {
-        event.preventDefault()
-        emailjs.sendForm('service_dqrksm5', 'template_d3nkh1o', event.target, 'W6duJf4emA0AGH6j0')
-        event.target.reset()
+    const sendEmail: SubmitHandler<FormValues> = (data, event) => {
+        event?.preventDefault()
+        emailjs.sendForm('service_dqrksm5', 'template_d3nkh1o', event?.target, 'W6duJf4emA0AGH6j0')
+        event?.target.reset()
     }
 
     return (
