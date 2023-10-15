@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.b4ee6124.css",
-    "main.js": "/Portfolio/static/js/main.fb3db4b8.js",
+    "main.css": "/Portfolio/static/css/main.2ed5d99b.css",
+    "main.js": "/Portfolio/static/js/main.30e5b54c.js",
     "static/media/connection-networking-interconnection-link-bond.jpg": "/Portfolio/static/media/connection-networking-interconnection-link-bond.07785cdecae49f0d1543.jpg",
     "static/media/flat-lay-notebook-with-to-do-list-on-desk.jpg": "/Portfolio/static/media/flat-lay-notebook-with-to-do-list-on-desk.5ba69b6ccda04972f6ee.jpg",
     "static/media/photo_2023-04-01_15-39-39.jpg": "/Portfolio/static/media/photo_2023-04-01_15-39-39.f18fb94e126a94e3941f.jpg",
@@ -15,11 +15,11 @@
     "index.html": "/Portfolio/index.html",
     "static/media/typescript-svgrepo-com.svg": "/Portfolio/static/media/typescript-svgrepo-com.7b32abcf8ba5527249e836d7e84ce49a.svg",
     "static/media/material-ui-svgrepo-com.svg": "/Portfolio/static/media/material-ui-svgrepo-com.9a7fa21fef461d272ba8151574584e84.svg",
-    "main.b4ee6124.css.map": "/Portfolio/static/css/main.b4ee6124.css.map",
-    "main.fb3db4b8.js.map": "/Portfolio/static/js/main.fb3db4b8.js.map"
+    "main.2ed5d99b.css.map": "/Portfolio/static/css/main.2ed5d99b.css.map",
+    "main.30e5b54c.js.map": "/Portfolio/static/js/main.30e5b54c.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4ee6124.css",
-    "static/js/main.fb3db4b8.js"
+    "static/css/main.2ed5d99b.css",
+    "static/js/main.30e5b54c.js"
   ]
 }
