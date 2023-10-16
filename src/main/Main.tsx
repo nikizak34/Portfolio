@@ -6,6 +6,8 @@ import {Link} from "react-scroll";
 import {TypeAnimation} from "react-type-animation";
 
 
+
+
 export const Main = () => {
     return (
         <div id={'main'} className={s.mainBlock}>
@@ -43,7 +45,7 @@ export const Main = () => {
                               offset={-40}
                               duration={500}
                         >MY WORK</Link>
-                        <div className={s.here}>CV</div>
+                        <a href={''} target="_blank" rel='noreferrer' download className={s.here}>CV</a>
                     </div>
                 </div>
                 <div className={s.image}>
